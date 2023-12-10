@@ -71,12 +71,12 @@ def index():
 #     print(frontend_input)# 1st input value here print from frontend value we input there
 #     return "Data Recieve"   
  
-@my_app.route('/data',methods=["GET","POST"])
-def get_data1():
-    values=request.args # this object recieve query params(parameter) for frontend(postman)
-    print(values)
-    print(type(values))
-    return "Data Recieved"
+
+@my_app.route('/login')
+def login():
+    """ this is login route"""
+    a=10
+    print(a)
     
 
 if __name__ == "__main__":
