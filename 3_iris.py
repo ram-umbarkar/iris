@@ -1,7 +1,7 @@
 from flask import Flask,request,render_template,jsonify
 import pickle
 import numpy as np
-import pandas as pd
+import dataclasses
 
 with open('model.pkl','rb') as f:
     model = pickle.load(f)
